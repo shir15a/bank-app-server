@@ -17,6 +17,9 @@ app.use(bodyParser.json());
 
 app.use('/api/bank/transactions',transactionsRoute);
 app.use('/api/bank/account',accountRouter);
+app.use("/", (req, res) => res.send("ShirA"));
+
+
 
 const uri = "mongodb+srv://shira:FLWehXe93lmUqxs2@shira.gviqa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
